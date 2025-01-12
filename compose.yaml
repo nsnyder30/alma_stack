@@ -44,9 +44,9 @@ services:
       - MYSQL_HOST=db
     tty: true
     command: ["bash", "-c", "tail -f /dev/null"]
-    hostname: node_dev
-    network_mode: host
     dns: 8.8.8.8
+    ports: 
+      - "3000:3000"
     volumes:
       - type: bind
         source: ./app/
