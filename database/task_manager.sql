@@ -116,13 +116,6 @@ CREATE TABLE `tm_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tm_users`
---
-
-INSERT INTO `tm_users` (`usr_id`, `usr_username`, `usr_email`, `usr_first`, `usr_last`, `usr_pwhash`, `usr_acc_status`) VALUES
-(1, 'test-user', 'test@gmail.com', 'test', 'user', '$2y$10$7uFpTcRfMtVy3IBiIwKtyuNLpzBGVsF1KwHogAOgcz67MdPfS0dNO', 'Active');
-
---
 -- Indexes for dumped tables
 --
 
