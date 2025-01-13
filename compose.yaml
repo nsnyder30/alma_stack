@@ -12,6 +12,7 @@ services:
       MYSQL_PASSWORD: taskpass
     volumes:
       - db_data:/var/lib/mysql
+      - ./database/task_manager.sql:/docker-entrypoint-initdb.d/init.sql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
